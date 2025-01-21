@@ -17,30 +17,6 @@ This structure is known as a feedforward architecture because the connections in
 * The hidden layer contains unobservable nodes, or units. The value of each hidden unit is some function of the predictors; the exact form of the function depends in part upon the network type and in part upon user-controllable specifications.
 * The output layer contains the responses. Since the history of default is a categorical variable with two categories, it is recoded as two indicator variables. Each output unit is some function of the hidden units. Again, the exact form of the function depends in part on the network type and in part on user-controllable specifications.
 ![Small Labelled Neural Network](http://i.imgur.com/HdfentB.png)
-
-
-#### Summary of Sequential model
-
-
-![Summary](https://github.com/aakashjhawar/handwritten-digit-recognition/blob/master/assets/model/model_summary.png)
-
-## Getting Started
-
-How to use
-```    
-git clone https://github.com/aakashjhawar/Handwritten-Digit-Recognition.git
-cd Handwritten-Digit-Recognition
-pip3 install -r requirements.txt 
-python3 tf_cnn.py
-```
-* You can also run the `load_model.py` to skip the training of NN. It will load the pre saved model from `model.json` and `model.h5` files.
-```
-python3 load_model.py <path/to/image_file>
-```
-For example
-```
-python3 load_model.py assets/images/1a.jpg 
-```
  
 ## Prerequisites
 
@@ -49,7 +25,3 @@ python3 load_model.py assets/images/1a.jpg
 ```
 sudo apt-get install python-opencv
 ``` 
-## Result:
-Following image is the prediction of the model.
-![Result of CNN model](https://github.com/aakashjhawar/Handwritten-Digit-Recognition/blob/master/result.png)
-
